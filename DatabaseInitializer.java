@@ -4,9 +4,6 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
- * Creates tables when MySQL is reachable. The UI still works with memory fallback when it is not.
- */
 public final class DatabaseInitializer {
     private DatabaseInitializer() {
     }
@@ -59,7 +56,7 @@ public final class DatabaseInitializer {
                     )
                     """);
         } catch (SQLException ignored) {
-            // Demo mode is intentionally available when MySQL is not configured.
+            
         }
     }
 }
