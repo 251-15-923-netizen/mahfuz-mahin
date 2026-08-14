@@ -14,7 +14,7 @@ public class RecommendationDAO {
             ps.setString(2, recommendationText);
             ps.executeUpdate();
         } catch (SQLException ignored) {
-            // ReportDAO memory fallback already preserves the recommendation for demo mode.
+            
         }
     }
 }
