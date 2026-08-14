@@ -123,7 +123,7 @@ public class ReportDAO {
                 int score = Integer.parseInt(line.substring(scoreStart, scoreEnd));
                 result.addIssue(new SkinIssue(name, score, 80.0, severity));
             } catch (RuntimeException ignored) {
-                // Keep loading the report even if a legacy issue line has a different format.
+               
             }
         }
     }
